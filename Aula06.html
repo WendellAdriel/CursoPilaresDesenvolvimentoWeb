@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
+		<meta charset="UTF-8" />
+		<title>Aula06 - Tabelas</title>
+	</head>
+
+	<body>
+		<h1 align="center">Aula 06 - Tabelas</h1>
+		<hr>
+		<h2>Tags para utilizar tabelas</h2>
+		<ul type="circle">
+			<li>A tag "table" é usada para definir uma tabela</li>
+			<li>A tag "thead" é usada para definir o cabeçalho da tabela</li>
+			<li>A tag "tbody" é usada para definir o corpo da tabela</li>
+			<li>A tag "tfoot" é usada para definir o rodapé da tabela</li>
+			<li>A tag "th" é usada para definir uma célula de título</li>
+			<li>A tag "tr" é usada para definir uma linha em uma tabela</li>
+			<li>A tag "td" é usada para definir uma célula em uma tabela</li>
+		</ul>
+		<h2>Exemplos</h2>
+		<h4>Tabela simples</h4>
+		<table>
+			<thead>
+				<tr>
+					<th>Título 1</th>
+					<th>Título 2</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Tabelas HTML</td>
+					<td>São Legais</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Primeira célula</td>
+					<td>Segunda célula</td>
+				</tr>
+				<tr>
+					<td>Terceira célula</td>
+					<td>Quarta célula</td>
+				</tr>
+			</tbody>
+		</table>
+			<h4>Tabela com células da mesma linha mescladas</h4>
+		<table>
+			<thead>
+				<tr>
+					<th>Título 1</th>
+					<th>Título 2</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Tabelas HTML</td>
+					<td>São Legais</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Primeira célula</td>
+					<td>Segunda célula</td>
+				</tr>
+				<tr>
+					<td colspan="2">Terceira célula</td>
+				</tr>
+			</tbody>
+		</table>
+		<h4>Tabela com células de linhas diferentes mescladas</h4>
+		<table>
+			<thead>
+				<tr>
+					<th>Título 1</th>
+					<th>Título 2</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Tabelas HTML</td>
+					<td>São Legais</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td rowspan="2">Primeira célula</td>
+					<td>Segunda célula</td>
+				</tr>
+				<tr>
+					<td>Terceira célula</td>
+				</tr>
+			</tbody>
+		</table>
+		<h4>Tabela com conteúdos diversos</h4>
+		<table>
+			<thead>
+				<tr>
+					<th>Título 1</th>
+					<th>Título 2</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Tabelas HTML</td>
+					<td>São Legais</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>
+						<img src="img/html5.jpg" height="100" alt="HTML5">
+					</td>
+					<td>
+						<strong>Texto em negrito</strong>
+						<em>Texto em itálico</em>
+						<u>Texto sublinhado</u>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<ul>
+							<li>Primeiro item da lista</li>
+							<li>Segundo item da lista</li>
+						</ul>
+					</td>
+					<td>
+						<a href="http://codeshare.com.br" target="_blank">CodeShare</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
