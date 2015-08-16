@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Aula07 - Formulários</title>
+	</head>
+	
+	<body>
+		<h1 align="center">Aula 07 - Formulários - Parte 01</h1>
+		<hr>
+		<h2>Formulários</h2>
+		<ul type="circle">
+			<li>Meio de interação do usuário com nossa aplicação</li>
+			<li>Usado para coletar informações do usuário que sejam importantes para nossa aplicação</li>
+			<li>Um dos recursos mais usados em aplicações e sites</li>
+		</ul>
+		<h2>Atributos mais usados da Tag de Formulário</h2>
+		<ul type="circle">
+			<li>action: onde as informações do formulário serão enviadas</li>
+			<li>autocomplete: define se os campos do formulário poderão ter autocomplete</li>
+			<li>enctype: define como os dados do formulário devem ser codificados, usado principalmente quando o usuário pode fazer upload de arquivos. Só pode ser usado com o método POST</li>
+			<li>method: define o método HTTP usado para enviar os dados do formulário</li>
+			<li>name: define um nome para o formulário</li>
+			<li>novalidate: define que o formulário não deve ser validado quando for enviado</li>
+		</ul>
+		<h2>Exemplos</h2>
+		<ul>
+			<li>
+				Formulário simples:
+				<form name="simples" method="POST" action="resposta.php">
+				</form>
+			</li>
+			<li>
+				Formulário com autocomplete desativado:
+				<form name="autocomplete" method="GET" action="resposta.php" autocomplete="off">
+				</form>
+			</li>
+			<li>
+				Formulário sem validação:
+				<form name="novalidate" method="POST" action="resposta.php" novalidate>
+				</form>
+			</li>
+			<li>
+				Formulário para upload de arquivos:
+				<form name="upload" method="POST" action="resposta.php" enctype="multipart/form-data">
+			</li>
+		</ul>
+	</body>
+</html>
